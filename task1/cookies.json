@@ -1,0 +1,47 @@
+[
+  {
+    "name": "__cf__client__uuid",
+    "value": "0atwYx6gBQITTyfpjOoP9zi6jcaxOXhTIBxxkNZZBadN34NCOnoYFHq4hXhIUtw9L4zII8hidIPqpaMA0Ycpw5Xv2Sk6zYo9FvWYSKXZy96j1y5WrCOjX2SWUT9PkViq4AUfpdSEUYg3BUNNnp1yB9vD8P4LzfOAOKYqihJoELR",
+    "domain": "www.crocs.com",
+    "path": "/",
+    "expires": 1751448008.226907,
+    "size": 189,
+    "httpOnly": true,
+    "secure": false,
+    "session": false,
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "__cf__client__uuid-ssn",
+    "value": "0atwYx6gBQITTyfpjOoP9zi6jcaxOXhTIBxxkNZZBadN34NCOnoYFHq4hXhIUtw9L4zII8hidIPqpaMA0Ycpw5Xv2Sk6zYo9FvWYSKXZy96j1y5WrCOjX2SWUT9PkViq4AUfpdSEUYg3BUNNnp1yB9vD8P4LzfOAOKYqihJoELR",
+    "domain": "www.crocs.com",
+    "path": "/",
+    "expires": 1751448008.226811,
+    "size": 193,
+    "httpOnly": true,
+    "secure": true,
+    "session": false,
+    "sameSite": "None",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure"
+  },
+  {
+    "name": "cf_clearance",
+    "value": "qEsln2FrMftUselQI7QEuX9O2hoiSGSX1uHJMelc.JI-1751361577-1.2.1.1-Lsg3QlMOPfE63gAE_KYlNXPbQ8CTawH5mO5RAGacxYrpzMnRV86lkY_X.4zMwa1rI1EUYyf2.UiqSs_0oBVM364vyXY3o.A0wTvkO4KcN2xoc39ZpTrk1s03khw6N__Em5gFFEu1pDC8CuznqrQIHbkKhEhxM7lOkR2.qXyLKwUcV_OW2uPN215MsO7HN6nn2obA6bTkwBVy6vn3J9kcdRgxYbSnV49jSB5y0tePt3siOCb2WQZlX.6O0eabNffHrk07F0c7helOEZn9JIEguHeywd5p60UHw.6.4wk8b7ulqkc1htlzfP3SgnaFHG7ozmhzm6eSvG8zBViPdJv.3eyqnd9clQrAe.9Auf.X7hko1qF0qDrp1UJY18oWHjxH",
+    "domain": ".crocs.com",
+    "path": "/",
+    "expires": 1782897577.646566,
+    "size": 459,
+    "httpOnly": true,
+    "secure": true,
+    "session": false,
+    "sameSite": "None",
+    "priority": "Medium",
+    "sameParty": false,
+    "sourceScheme": "Secure",
+    "partitionKey": "https://crocs.com"
+  }
+]
