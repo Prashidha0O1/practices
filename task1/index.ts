@@ -8,11 +8,29 @@ interface RealBrowserResponse {
 }
 
 export async function humanizePage(page: Page): Promise<void> {
-  // Simulate human-like mouse movements
   await page.mouse.move(Math.random() * 800, Math.random() * 600, { steps: 10 });
   await page.mouse.move(Math.random() * 800, Math.random() * 600, { steps: 10 });
+  
+  const x = Math.floor(Math.random() * 800);
+  const y = Math.floor(Math.random() * 600);
+  
+  await page.mouse.move(x, y, { steps: 20 });
+  console.log(`Moved mouse to (${x}, ${y})`);
+  await page.mouse.click(x, y);
+  console.log(`Clicked at (${x}, ${y})`);
 
-  // Simulate scrolling
+  await page.mouse.wheel({ deltaY: 300 });
+  console.log(`Scrolled down by 300 pixels`);
+  const dragStartX = 100;
+  const dragStartY = 100;
+  const dragEndX = 300;
+  const dragEndY = 300;
+
+  await page.mouse.move(dragStartX, dragStartY);
+  await page.mouse.down(); 
+  await page.mouse.move(dragEndX, dragEndY, { steps: 15 });
+  await page.mouse.up(); 
+  console.log(`Dragged from (${dragStartX}, ${dragStartY}) to (${dragEndX}, ${dragEndY})`);
   await page.evaluate(() => window.scrollBy(0, Math.random() * 500));
   await page.setViewport({
     width: 1366 + Math.floor(Math.random() * 100),
@@ -36,7 +54,6 @@ export async function loadCookies(page: Page, path: string): Promise<void> {
 }
 
 export async function CloudflareBypass(): Promise<void> {
-  // Use type assertion to 'unknown' first to resolve type incompatibility
   const { browser, page } = (await connect({
     headless: false,
     args: [
