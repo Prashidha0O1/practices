@@ -86,6 +86,10 @@ describe('CloudflareBypass', () => {
 
   test('should handle HTTP 429 error and retry', async () => {
     jest.useFakeTimers();
+    jest.spyOn(global, 'setTimeout').mockImplementation((cb) => {
+      cb();
+      return 0 as any;
+    });
     mockPage.waitForResponse = jest.fn().mockResolvedValueOnce({ status: () => 429 });
     (mockPage.goto as jest.Mock).mockResolvedValueOnce(null).mockResolvedValueOnce(null); 
     const promise = CloudflareBypass(testUrl);
