@@ -11,13 +11,21 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@sparticuz/chromium": "^112.0.0",
+    "axios": "^1.6.0",
+    "chrome-remote-interface": "^0.33.0",
+    "cli-color": "^2.0.4",
     "puppeteer": "^24.11.1",
-    "puppeteer-extra": "^3.3.6",
+    "puppeteer-core": "^24.11.2",
+    "puppeteer-extra": "^3.3.4",
     "puppeteer-extra-plugin-stealth": "^2.11.2",
     "puppeteer-real-browser": "^1.4.2",
-    "user-agents": "^1.1.589"
+    "user-agents": "^1.1.589",
+    "xvfb": "^0.2.3"
   },
   "devDependencies": {
+    "@types/chrome-remote-interface": "^0.31.14",
+    "@types/cli-color": "^2.0.6",
     "@types/jest": "^30.0.0",
     "@types/node": "^24.0.8",
     "cross-env": "^7.0.3",

@@ -10,7 +10,6 @@ export class WebGLFingerprint {
       if (typeof WebGLRenderingContext !== 'undefined') {
         const originalGetParameter = WebGLRenderingContext.prototype.getParameter;
         WebGLRenderingContext.prototype.getParameter = function(parameter: number) {
-          // Spoof vendor and renderer
           if (parameter === 37445) return 'NVIDIA Corporation'; // UNMASKED_VENDOR_WEBGL
           if (parameter === 37446) return 'NVIDIA GeForce RTX 3080/PCIe/SSE2'; // UNMASKED_RENDERER_WEBGL
           // Add noise to numeric parameters
