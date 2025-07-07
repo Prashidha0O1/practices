@@ -20,7 +20,7 @@ describe('Antibot Evasion Test: carousell.com', () => {
   beforeAll(async () => {
     const deviceProfile = DeviceProfiles.getProfile('chrome-desktop');
     const configManager = new EvasionConfigManager({
-      headless: false,
+      headless: true,
       deviceProfile,
       enableCanvasEvasion: true,
       enableWebGLEvasion: true,
@@ -115,6 +115,5 @@ describe('Antibot Evasion Test: carousell.com', () => {
       console.warn('Failed to get cookies:', err);
     }
     expect(Array.isArray(cookies)).toBe(true);
-    // Do not require cookies to be present, just that the call succeeded
   }, 180000);
 }); 
